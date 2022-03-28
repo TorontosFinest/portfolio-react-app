@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
-import {FaBars, FaTimes} from "react-icons/fa"
+import {FaBars, FaTimes, FaLinkedin, FaGithub} from "react-icons/fa"
+import {HiOutlineMail} from 'react-icons/hi'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from "../assets/logo.png"
 const Navbar = () => {
     const [nav,setNav] = useState(false);
@@ -31,8 +33,30 @@ const Navbar = () => {
         </ul>
    
 
-    <div className="hidden" ></div>
-    
+    <div className="hidden lg:flex fixed flex-col top-[35%] left-0" >
+    <ul>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-sm'>
+            <a className='flex justify-between items-center w-full' href="https://www.linkedin.com/in/abdi-ali2022/" target="_blank">
+                LinkedIn <FaLinkedin size={30} />
+            </a>
+        </li>
+         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] mt-5 hover:ml-[-10px] duration-300 bg-slate-800 rounded-sm'>
+            <a className='flex justify-between items-center w-full' href="https://github.com/TorontosFinest" target="_blank">
+                GitHub <FaGithub size={30} />
+            </a>
+        </li>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] mt-5 hover:ml-[-10px] duration-300 bg-green-600 rounded-sm'>
+            <a className='flex justify-between items-center w-full' href="https://github.com/TorontosFinest" target="_blank">
+                Email<HiOutlineMail size={30} />
+            </a>
+        </li>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] mt-5 hover:ml-[-10px] duration-300 bg-gray-600 rounded-sm'>
+            <a className='flex justify-between items-center w-full' href="https://resume.creddle.io/resume/1ogk2dupqat" target="_blank">
+                Resume<BsFillPersonLinesFill size={30} />
+            </a>
+        </li>
+    </ul>
+    </div>
     </div>
   )
 }
