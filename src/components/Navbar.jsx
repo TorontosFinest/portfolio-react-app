@@ -96,7 +96,7 @@ const Navbar = () => {
                 Email<HiOutlineMail size={30} />
             </a>
         </li>
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] mt-5 hover:ml-[-10px] duration-300 bg-gray-600 rounded-sm'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-110px] mt-5 hover:ml-[-10px] duration-300 bg-orange-600 rounded-sm'>
             <a className='flex justify-between items-center w-full' href="https://resume.creddle.io/resume/1ogk2dupqat" target="_blank">
                 Resume<BsFillPersonLinesFill size={30} />
             </a>
